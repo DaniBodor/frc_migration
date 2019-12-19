@@ -3,7 +3,14 @@
 Version 0.1.0
 
 analysis of cell migration data
-yadda yadda
+
+
+## Requirements
+
+Python v3.6
+Spyder 3.2.6
+see requirements.txt for packages
+
 
 
 ## Project organization
