@@ -32,8 +32,8 @@ MOD_DimReduct = 1           # PCA and tSNE analysis of data produced by heteromo
 MOD_ComparisonPlots = 1     # generate plots for individual parameters of heteromotility 
 
 # input names that need to be changed or checked for each experiment
-base_dir = 'CF19'           # working directory; this script should be saved in the same folder as base_dir
-data_folder = 'input_data'  # inside base_dir; folder that 1 subfolder per condition with the csv files to be analyzed
+#base_dir = 'CF19'           # working directory; this script should be saved in the same folder as base_dir    #obsolete!
+exp_folder = 'CF15'   # folder with 1 subfolder per condition with the csv files to be analyzed
 exp_name = ''               # only *.csv starting with these letters will be analyzed (can be empty string to analyze everything)
 
 # parameters that need can be changed to reflect settings/choices of analysis
@@ -99,8 +99,11 @@ outdir_list = []
 lens = []
 counter = 0
 
-base_dir = './%s/'%base_dir
-input_dir = base_dir + data_folder+'/'
+#base_dir = './%s/'%base_dir
+base_dir = './'         #
+input_dir = base_dir + 'data/raw/' + exp_folder + '/'
+print(input_dir)
+klvkld
 base_outdir = base_dir + f'tracklength{track_length}_movethresh{move_thresh}/'
 
 
@@ -125,7 +128,7 @@ for outdir in outdir_list:
         os.makedirs(outdir)
 
 input_para_set = [
-        base_dir , data_folder , exp_name , 
+        base_dir , exp_folder , exp_name , 
         track_length , pre_division_scrapping , analysis_interv , move_thresh , speed_thresh , rseed ,
         plot_size , spider_type , p_dec,
         DimReductParas,
@@ -137,7 +140,7 @@ parameters for run on {starttime}
 
 input data:
     base_dir = {base_dir}
-    data_folder = {data_folder}
+    exp_folder = {exp_folder}
     exp_name = {exp_name}
 
 analysis settings: 
