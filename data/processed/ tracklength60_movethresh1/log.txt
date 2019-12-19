@@ -1,0 +1,24 @@
+
+parameters for run on 2019-12-19 14:32:53.374599
+
+input data:
+    base_dir = ./
+    exp_folder = CF15
+    exp_name = 
+
+analysis settings: 
+    track_length = 60
+    pre_division_scrapping = 8
+    analysis_interv = random
+    move_thresh = 1
+    speed_thresh = 0
+    rseed = <bound method Random.seed of <random.Random object at 0x0000015B221FEC38>>
+
+visualization:
+    plot_size = 250
+    spider_type = condition
+    p_dec = 4
+
+heteromotility parameters to include in dimenstion reduction:
+    ['total_distance', 'net_distance', 'linearity', 'spearmanrsq', 'progressivity', 'max_speed', 'min_speed', 'avg_speed', 'MSD_slope', 'hurst_RS', 'nongauss', 'disp_var', 'disp_skew', 'rw_linearity', 'rw_netdist', 'rw_kurtosis01', 'rw_kurtosis02', 'rw_kurtosis03', 'rw_kurtosis04', 'rw_kurtosis05', 'rw_kurtosis06', 'rw_kurtosis07', 'rw_kurtosis08', 'rw_kurtosis09', 'rw_kurtosis10', 'avg_moving_speed01', 'avg_moving_speed02', 'avg_moving_speed03', 'avg_moving_speed04', 'avg_moving_speed05', 'avg_moving_speed06', 'avg_moving_speed07', 'avg_moving_speed08', 'avg_moving_speed09', 'avg_moving_speed10', 'time_moving01', 'time_moving02', 'time_moving03', 'time_moving04', 'time_moving05', 'time_moving06', 'time_moving07', 'time_moving08', 'time_moving09', 'time_moving10', 'autocorr_1', 'autocorr_2', 'autocorr_3', 'autocorr_4', 'autocorr_5', 'autocorr_6', 'autocorr_7', 'autocorr_8', 'autocorr_9', 'autocorr_10']
+
