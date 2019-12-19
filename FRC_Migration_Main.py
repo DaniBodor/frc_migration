@@ -179,7 +179,7 @@ def scrap_split_tracks(trackdf,pre_division_scrapping):
         print('duplicate timepoints still exist at timepoint %i, track %i, file: %s'%(div_point,track,filename))
         raise IndexError('duplicate timepoints exist')  #this needs to be fixed, probably by a custom error
 #    except:
-        # yadda yadda fix this dskbfsdk
+        # yadda yadda fix this dskbfsdk jkfsdhgjdhl
     
     return trackdf
 
