@@ -174,9 +174,12 @@ def scrap_split_tracks(trackdf,pre_division_scrapping):
         analysis_end = max(0,div_point - pre_division_scrapping)
         trackdf = trackdf[:analysis_end]
     
+#    if len(trackdf) != len(trackdf.FRAME.unique()):
     if len(trackdf) != len(trackdf.FRAME.unique()):
         print('duplicate timepoints still exist at timepoint %i, track %i, file: %s'%(div_point,track,filename))
-        sys.exit('fix duplicate track error')   
+        raise IndexError('duplicate timepoints exist')  #this needs to be fixed, probably by a custom error
+#    except:
+        # yadda yadda fix this
     
     return trackdf
 
